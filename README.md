@@ -1,4 +1,4 @@
-This project is built with .
+This project is built with 
 
 - Vite
 - TypeScript
@@ -6,7 +6,6 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
 
 
