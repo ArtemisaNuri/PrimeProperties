@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 76% 52%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 45 76% 52%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .luxury-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .section-title {
+    @apply font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply font-montserrat text-sm md:text-base uppercase tracking-widest mb-4 text-luxury-gold;
+  }
+  
+  .btn-luxury {
+    @apply px-6 py-3 bg-luxury-black text-white hover:bg-luxury-charcoal transition-colors duration-300 font-montserrat uppercase tracking-wider text-sm;
+  }
+  
+  .btn-luxury-outline {
+    @apply px-6 py-3 border border-luxury-black text-luxury-black hover:bg-luxury-black hover:text-white transition-colors duration-300 font-montserrat uppercase tracking-wider text-sm;
+  }
+  
+  .property-card {
+    @apply bg-white shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .luxury-input {
+    @apply w-full p-3 border-b border-luxury-black bg-transparent focus:outline-none focus:border-luxury-gold transition-colors duration-300;
+  }
+  
+  .property-feature {
+    @apply flex items-center gap-2 text-sm text-luxury-charcoal;
+  }
+}
