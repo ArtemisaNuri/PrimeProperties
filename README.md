@@ -7,5 +7,5 @@ This project is built with
 - Tailwind CSS
 
 
-
+https://prime-properties-sandy.vercel.app/
 
